@@ -1,5 +1,7 @@
 package ua.artcode.week1.day2;
 
+import ua.artcode.week1.homework.MyHashMap;
+
 import java.util.*;
 
 /**
@@ -50,5 +52,11 @@ public class TestCollections {
         System.out.println(man1.equals(man2));
         System.out.println(man1.hashCode() + " | " + man2.hashCode());
 
+
+        Map<String,String> map = new MyHashMap<String, String>();
+//        map = new HashMap<String, String>();
+        map.put("one","Apple");
+        map.put("one","apple");
+        System.out.println(map.get("one"));
     }
 }
